@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Type Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <div class="main">
+        <div id="display">
+            <input type="text" id="inputField" value="0" disabled />
+        </div>
+        <div class="box">
+            <button class="operators" onclick="handleClick('C')">C</button>
+            <button class="operators" onclick="handleClick('CE')">CE</button>
+            <button class="operators" onclick="handleClick('%')">%</button>
+            <button class="operators" onclick="handleClick('/')">/</button>
+        </div>
+        <div class="box">
+            <button onclick="handleClick('7')">7</button>
+            <button onclick="handleClick('8')">8</button>
+            <button onclick="handleClick('9')">9</button>
+            <button class="operators" onclick="handleClick('*')">&times</button>
+        </div>
+        <div class="box">
+            <button onclick="handleClick('4')">4</button>
+            <button onclick="handleClick('5')">5</button>
+            <button onclick="handleClick('6')">6</button>
+            <button class="operators" onclick="handleClick('-')">-</button>
+        </div>
+        <div class="box">
+            <button onclick="handleClick('1')">1</button>
+            <button onclick="handleClick('2')">2</button>
+            <button onclick="handleClick('3')">3</button>
+            <button class="operators" onclick="handleClick('+')">+</button>
+        </div>
+        <div class="box">
+            <button onclick="handleClick('0')">0</button>
+            <button onclick="handleClick('.')">.</button>
+            <button onclick="handleClick('=')" id="calci_btn">=</button>
+            <button class="operators" onclick="handleClick('bs')">&#9003</button>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
